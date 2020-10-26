@@ -20,5 +20,7 @@ plot(epcdata$Sub_metering_1~epcdata$fulldate, type="l",
           ylab="Energy Sub Metering", xlab='', col='black')
 lines(epcdata$Sub_metering_2~epcdata$fulldate, type="l", col = 'red')
 lines(epcdata$Sub_metering_3~epcdata$fulldate, type='l', col = 'blue')
+legend('topright', legend=c('Sub_metering_1', 'Sub_metering_2',
+          'Sub_metering_3'), col=c("black", "red", "blue"), lty=1)
 
 dev.off()
